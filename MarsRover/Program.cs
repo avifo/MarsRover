@@ -11,6 +11,8 @@ namespace MarsRover
     {
         public static void Main(string[] args)
         {
+            string[] inputData = new string[5];
+
             char[,] roverArea = new char[ExploarionArea.row, ExploarionArea.row]; // array for the gird that the rover is moving around 
             for (int i = 0; i < ExploarionArea.row; i++)
             {
@@ -21,7 +23,11 @@ namespace MarsRover
             }
             ExploarionArea.ShowGrid(roverArea);
             Console.WriteLine("Input 5 commands for the rover");
-            Console.ReadLine();
+            for (int i = 0; i < 5; i++)
+            {
+                inputData[i];
+                Console.WriteLine(i);
+            }
         }
 
         static void RoverCommands()
