@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace MarsRover
 {
-    class RoverCommands
-    {
+    public class RoverCommands
+    { 
+        public enum Directions
+        {
+            North,
+            West,
+            South,
+            East
+        }
 
+        public enum Movements
+        {
+            Right,
+            Left, 
+            m
+        }
     }
 }
