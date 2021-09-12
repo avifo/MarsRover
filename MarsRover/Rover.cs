@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace MarsRover
 {
-    class Rover
+    public class Rover
     {
-        public Rover(int xLoc, int yLoc)
+        public int X;
+        public int Y;
+        public string Direction;
+        public Rover(int currentX, int currentY, RoverComand.Direction facingDirection)
         {
-
+            currentX = 0;
+            currentY = 0;
+            facingDirection = 0;
         }
     }
 }
