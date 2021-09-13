@@ -8,9 +8,9 @@ namespace MarsRover
 {
     public class Rover //Rover class to contain the X and Y location plus the direction it is facing
     {
-        int X = 0;
-        int Y = 0;
-        private RoverComand.Direction direction = RoverComand.Direction.South;
+        int X = 0; // x location of rover 
+        int Y = 0; // y location of rover 
+        private RoverComand.Direction direction = RoverComand.Direction.South; // direction the rover is facing
 
         public int Xset
         {
