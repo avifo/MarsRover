@@ -6,16 +6,27 @@ using System.Threading.Tasks;
 
 namespace MarsRover
 {
-    public class Rover
+    public class Rover //Rover class to contain the X and Y location plus the direction it is facing
     {
-        public int X;
-        public int Y;
-        public string Direction;
-        public Rover(int currentX, int currentY, RoverComand.Direction facingDirection)
+        int X = 0;
+        int Y = 0;
+        private RoverComand.Direction direction = RoverComand.Direction.South;
+
+        public int Xset
         {
-            currentX = 0;
-            currentY = 0;
-            facingDirection = 0;
+            get { return X; }
+            set { X = value; }
+        }
+
+        public int Yset
+        {
+            get { return Y; }
+            set { Y = value; }
+        }
+        public RoverComand.Direction Directionset
+        {
+            get { return direction; }
+            set { direction = value; }
         }
     }
 }
